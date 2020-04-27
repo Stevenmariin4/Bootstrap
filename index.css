@@ -128,8 +128,19 @@ p {
 .btn {
     cursor: pointer;
 }
-.card-img-top{
-    max-width: 22em;
+.card figure img {
+    border-top-left-radius: 3em;
+    border-top-right-radius: 3em;
+}
+.card{
+    border-top-left-radius: 3em;
+    border-top-right-radius: 3em;
+}
+.card figure:hover img{
+    z-index: 1000;
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
 }
 
 @keyframes pulse {
